@@ -82,11 +82,11 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
-5. Run backend server
+5. Run backend server (LIVE https://expense-tracker-opgm.onrender.com)
 cd server
 npm run dev
 
-6. Run frontend
+6. Run frontend (LIVE https://expense-tracker-theta-dun.vercel.app)
 cd client
 npm run dev
 

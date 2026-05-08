@@ -70,7 +70,7 @@ function DashboardPage() {
     if (editingId) {
 
       await API.put(
-        `/transactions/${editingId}`,
+        `/api/transactions/${editingId}`,
         formData
       );
 
@@ -80,8 +80,7 @@ function DashboardPage() {
 
     } else {
 
-      await API.post(
-        '/transactions',
+      await API.post('/api/transactions',
         formData
       );
 
@@ -107,7 +106,7 @@ function DashboardPage() {
   // 🔹 Delete transaction
   const deleteTransaction = async (id) => {
     try {
-      await API.delete(`/transactions/${id}`);
+      await API.delete(`/api/transactions/${id}`);
       fetchTransactions();
     } catch (error) {
       console.log(error);
