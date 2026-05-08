@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.https://expense-tracker-opgm.onrender.com,
 });
 
 // Attach token automatically

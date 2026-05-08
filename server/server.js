@@ -12,7 +12,7 @@ const app = express();
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://expense-tracker-theta-dun.vercel.app/",
+    origin: "https://expense-tracker-theta-dun.vercel.app",
     credentials: true,
   })
 );
