@@ -9,7 +9,13 @@ const transactionRoutes = require('./routes/transactionRoutes');
 const app = express();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://expense-tracker-theta-dun.vercel.app/",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/transactions', transactionRoutes);
