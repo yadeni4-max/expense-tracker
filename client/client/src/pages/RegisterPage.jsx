@@ -22,7 +22,7 @@ function RegisterPage() {
     e.preventDefault();
 
     try {
-      await API.post('/auth/register', formData);
+      await API.post('/api/auth/register', formData);
 
       alert('Registration successful');
 

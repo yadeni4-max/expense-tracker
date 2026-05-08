@@ -28,7 +28,7 @@ function DashboardPage() {
 
     setLoading(true);
 
-    const response = await API.get('/transactions');
+    const response = await API.get('/api/transactions');
 
     setTransactions(response.data);
 
